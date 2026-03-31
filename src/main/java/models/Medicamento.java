@@ -9,8 +9,17 @@ package models;
  * @author valer
  */
 public class Medicamento {
+    
     private String nombre;
     private String dosis;
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setDosis(String dosis) {
+        this.dosis = dosis;
+    }
 
     public Medicamento(String nombre, String dosis) {
         this.nombre = nombre;

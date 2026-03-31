@@ -11,8 +11,18 @@ package models;
 import java.util.ArrayList;
 
 public class Propietario {
+    
     private String nombre;
     private ArrayList<Mascota> mascotas;
+
+    public void setMascotas(ArrayList<Mascota> mascotas) {
+        this.mascotas = mascotas;
+    }
+
+    @Override
+    public String toString() {
+        return "Propietario{" + "nombre=" + nombre + ", mascotas=" + mascotas + '}';
+    }
 
     public Propietario(String nombre) {
         this.nombre = nombre;

@@ -11,9 +11,48 @@ package models;
 import java.util.ArrayList;
 
 public class Consulta {
+    
     private Mascota mascota;
     private Veterinario veterinario;
     private ArrayList<Medicamento> medicamentos;
+
+    public Mascota getMascota() {
+        return mascota;
+    }
+
+    public void setMascota(Mascota mascota) {
+        this.mascota = mascota;
+    }
+
+    public Veterinario getVeterinario() {
+        return veterinario;
+    }
+
+    public void setVeterinario(Veterinario veterinario) {
+        this.veterinario = veterinario;
+    }
+
+    public ArrayList<Medicamento> getMedicamentos() {
+        return medicamentos;
+    }
+
+    public void setMedicamentos(ArrayList<Medicamento> medicamentos) {
+        this.medicamentos = medicamentos;
+    }
+
+    public Consulta() {
+    }
+
+    @Override
+    public String toString() {
+        return "Consulta{" + "mascota=" + mascota + ", veterinario=" + veterinario + ", medicamentos=" + medicamentos + '}';
+    }
+
+    public Consulta(Mascota mascota, Veterinario veterinario, ArrayList<Medicamento> medicamentos) {
+        this.mascota = mascota;
+        this.veterinario = veterinario;
+        this.medicamentos = medicamentos;
+    }
 
     public Consulta(Mascota mascota, Veterinario veterinario) {
         this.mascota = mascota;

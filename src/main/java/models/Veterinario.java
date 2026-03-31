@@ -9,7 +9,15 @@ package models;
  * @author valer
  */
 public class Veterinario {
-    private String nombre;
+        private String nombre;
+ @Override
+    public String toString() {
+        return "Veterinario{" + "nombre=" + nombre + '}';
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
     public Veterinario(String nombre) {
         this.nombre = nombre;
